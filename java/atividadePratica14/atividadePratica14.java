@@ -27,7 +27,7 @@ class AtividadePratica14
 
         number1 = Integer.parseInt(JOptionPane.showInputDialog("Digite um número inteiro"));
         number2 = Integer.parseInt(JOptionPane.showInputDialog("Digite outro número inteiro"));
-        quociente = number1 / number2;
+        quociente = (double)number1 / number2;
         pow = Math.pow(number1, number2);
         message = "O quociente da divisão de " + number1 + " por " + number2 + " é " + quociente + ". A potência de " + number1 + " por " + number2 + " é " + pow + ".";
 
