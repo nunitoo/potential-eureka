@@ -1,8 +1,8 @@
-/// Desenvolva um programa em Java que declara variÃ¡veis inteiras,
-/// char e String, receba dois nÃºmeros inteiros e uma opÃ§Ã£o, 
-/// calcula o produto dos dois nÃºmeros se eles forem positivos, 
-/// calcula a produtÃ³ria do primeiro nÃºmero, o nÃºmero de vezes do segundo
-/// e mostra as informaÃ§Ãµes. Usar estruturas de decisÃ£o e de mÃºltipla escola.
+/// Desenvolva um programa em Java que declara variáveis inteiras,
+/// char e String, receba dois números inteiros e uma opção, 
+/// calcula o produto dos dois números se eles forem positivos, 
+/// calcula a produtória do primeiro número, o número de vezes do segundo
+/// e mostra as informações. Usar estruturas de decisão e de múltipla escola.
 ///
 ///
 /// Author: Mateus Nunes
@@ -16,14 +16,14 @@ class AtividadePratica15
 {
     public static void input(char option)
     {
-        // VariÃ¡veis
+        // Variáveis
         int number1, number2;
         int product = 1;
         String output = "";
 
         // Input
-        number1 = Integer.parseInt(JOptionPane.showInputDialog("Digite um nÃºmero inteiro"));
-        number2 = Integer.parseInt(JOptionPane.showInputDialog("Digite outro nÃºmero inteiro"));
+        number1 = Integer.parseInt(JOptionPane.showInputDialog("Digite um número inteiro"));
+        number2 = Integer.parseInt(JOptionPane.showInputDialog("Digite outro número inteiro"));
 
         switch (option) 
         {
@@ -32,7 +32,7 @@ class AtividadePratica15
                 if(number1 > 0 && number2 > 0)
                 {
                     product = number1 * number2;
-                    output = "O produto de " + number1 + " por " + number2 + " Ã© " + product; 
+                    output = "O produto de " + number1 + " por " + number2 + " é " + product; 
                 }break;
             }   
             case '2':
@@ -40,7 +40,7 @@ class AtividadePratica15
                 for(int i = 1; i <= number2; i++)
                 {
                     product = product * number1;
-                    output = "O produtÃ³rio de " + number1 + ", " + number2 + " vezes Ã© " + product; 
+                    output = "O produtório de " + number1 + ", " + number2 + " vezes é " + product; 
                 }break;
             }
         }JOptionPane.showMessageDialog(null, output);
@@ -48,12 +48,12 @@ class AtividadePratica15
 
     public static void main(String args[])
     {
-        // VariÃ¡veis
+        // Variáveis
         char option = 0;
         
 
-        // InÃ­cio
-        option = (JOptionPane.showInputDialog("[1] para multiplicaÃ§Ã£o\n[2] para produtÃ³ria\n")).charAt(0);
+        // Início
+        option = (JOptionPane.showInputDialog("[1] para multiplicação\n[2] para produtória\n")).charAt(0);
         switch (option) {
             case '1':
             {
@@ -67,7 +67,7 @@ class AtividadePratica15
             }
             default:
             {
-                JOptionPane.showMessageDialog(null, "OpÃ§Ã£o invÃ¡lida.");
+                JOptionPane.showMessageDialog(null, "Opção inválida.");
                 break;
             }
         }   

@@ -1,8 +1,8 @@
-/// Desenvolva um programa em Java que declara variÃ¡veis inteiras, reais e String,
-/// recebe dois nÃºmeros inteiros usando interface com usuÃ¡rio,
-/// calcula o quociente da divisÃ£o dos dois nÃºmeros,
-/// a potÃªncia do primeiro nÃºmero pelo segundo nÃºmero
-/// e mostra essas informaÃ§Ãµes usando interface com usuÃ¡rio.
+/// Desenvolva um programa em Java que declara variáveis inteiras, reais e String,
+/// recebe dois números inteiros usando interface com usuário,
+/// calcula o quociente da divisão dos dois números,
+/// a potência do primeiro número pelo segundo número
+/// e mostra essas informações usando interface com usuário.
 ///
 ///
 /// Author: Mateus Nunes
@@ -15,7 +15,7 @@ class AtividadePratica14
     public static void main(String args[])
     {
 
-        // VariÃ¡veis
+        // Variáveis
         int number1, number2;
         double quociente;
         double pow;
@@ -23,13 +23,13 @@ class AtividadePratica14
 
 
 
-        // InÃ­cio
+        // Início
 
-        number1 = Integer.parseInt(JOptionPane.showInputDialog("Digite um nÃºmero inteiro"));
-        number2 = Integer.parseInt(JOptionPane.showInputDialog("Digite outro nÃºmero inteiro"));
+        number1 = Integer.parseInt(JOptionPane.showInputDialog("Digite um número inteiro"));
+        number2 = Integer.parseInt(JOptionPane.showInputDialog("Digite outro número inteiro"));
         quociente = (double)number1 / number2;
         pow = Math.pow(number1, number2);
-        message = "O quociente da divisÃ£o de " + number1 + " por " + number2 + " Ã© " + quociente + ". A potÃªncia de " + number1 + " por " + number2 + " Ã© " + pow + ".";
+        message = "O quociente da divisão de " + number1 + " por " + number2 + " é " + quociente + ". A potência de " + number1 + " por " + number2 + " é " + pow + ".";
 
 
 
