@@ -1,0 +1,71 @@
+algoritmo      "Livros"
+tipo
+    livro=registro
+                  nome,autor,editora: caracter
+                  ano_:inteiro
+    fimregistro
+var
+op,qnt_cadastro,i,qnt_lista: inteiro
+cadastro_l: vetor [1..30] de livro
+procedimento aparece_menu
+inicio
+      escreval("******MENU PRINCIPAL******")
+      escreval()
+      escreval("  1 - Cadastrar livro")
+      escreval("  2 - Listar livro")
+      escreval("  0 - Sair")
+fimprocedimento
+procedimento cadastro_
+inicio
+            limpatela
+            escreval("***  Cadastro de Livros  ***")
+            escreval("Quantos livros você deseja cadastrar ?")
+            leia(qnt_cadastro)
+            limpatela
+            para i de 1 ate qnt_cadastro faca
+            Escreval("Livro N°", i,"")
+            escreval("Nome do livro: ")
+            leia(cadastro_l[i].nome)
+            escreval("Nome do autor: ")
+            leia(cadastro_l[i].autor)
+            escreval("Editora: ")
+            leia(cadastro_l[i]. editora)
+            escreval("Ano de publicação: ")
+            leia(cadastro_l[i].ano_)
+            limpatela
+
+fimpara
+fimprocedimento
+procedimento listar_
+inicio
+             limpatela
+para i de 1 ate qnt_cadastro faca
+            Escreval("Livro N°", i,"")
+            escreval("Nome do livro: ", cadastro_l[i].nome, "")
+            escreval("Nome do autor: ", cadastro_l[i].autor,"")
+            escreval("Editora: ", cadastro_l[i]. editora,"")
+            escreval("Ano de publicação: ",cadastro_l[i].ano_,"")
+fimpara
+
+fimprocedimento
+procedimento sair_
+inicio
+  limpatela
+escreval("Muito obrigado por utilizar nossos serviços")
+fimprocedimento
+inicio
+repita
+
+      aparece_menu
+      leia(op)
+      escolha op
+       Caso 1
+            cadastro_()
+       Caso 2
+            listar_()
+       Caso 0
+            sair_()
+
+fimescolha
+ate op =0
+fimalgoritmo
